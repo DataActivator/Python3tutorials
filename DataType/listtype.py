@@ -14,6 +14,8 @@ print(type(mylist))
 print(mylist[5])
 print(mylist[-1])
 print(mylist[-5:])
+print(mylist[2:10])
+print(mylist[2:10:2])
 print(mylist[::2])
 
 
