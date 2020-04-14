@@ -4,89 +4,87 @@ Just as strings are defined as characters between quotes('')
 lists are defined by having values between square brackets [ ]
 Each element or value that is inside of a list is called an item
  '''
-# mylist = ['DS', 'ML', 'DL', 'AI', 'NLP', 'CV', 'Python', 'Java', 'C#', 'C++', 'R']
+mylist = ['DS', 'ML', 'DL', 'AI', 'NLP', 'CV', 'Python', 'Java', 'C#', 'C++', 'R']
 #           0     1     2     3     4      5       6        7      8      9     10
 #          -11   -10   -9    -8    -7     -6      -5       -4     -3     -2     -1
 
-# print(type(mylist))
+print(type(mylist))
 
 #Access List item:
-# print(mylist[5])
-# print(mylist[-1])
-# print(mylist[-5:])
-# print(mylist[::2])
+print(mylist[5])
+print(mylist[-1])
+print(mylist[-5:])
+print(mylist[::2])
 
 
 #Change Item value in list:
-# mylist[1] = 'GO'
-# print(mylist)
+mylist[1] = 'GO'
+print(mylist)
 
 
 
 
 #Check if Item Exists:
-# mylist = ['DS', 'ML', 'DL', 'AI', 'NLP', 'CV', 'Python', 'Java', 'C#', 'C++', 'R']
-
-# print('nlp' in mylist)
-# print('Java' not in mylist)
+print('nlp' in mylist)
+print('Java' not in mylist)
 
 
 
 #Add  item in list:
 #method1 append()
-# mylist.append('Covid-19')
-# print(mylist)
+mylist.append('Covid-19')
+print(mylist)
 #method2 insert()
-# mylist.insert(0, 'covid-19')
-# print(mylist)
+mylist.insert(0, 'covid-19')
+print(mylist)
 
 
 
 #Remove item from list:
-# mylist = ['DS', 'ML', 'DL', 'AI', 'NLP', 'CV', 'Python', 'Java', 'C#', 'C++', 'R']
+
 #method1 remove()
-# mylist.remove('AI')
-# print(mylist)
+mylist.remove('AI')
+print(mylist)
 
 #method2 pop()
-# mylist.pop(1)
-# print(mylist)
+mylist.pop(1)
+print(mylist)
 
 #method 3 del()
-# del mylist[3]
-# print(mylist)
+del mylist[3]
+print(mylist)
 
 
 
 
 
 #loop through list:
-mylist = ['DS', 'ML', 'DL', 'AI', 'NLP', 'CV', 'Python', 'Java', 'C#', 'C++', 'R']
-# for x in mylist:
-#     print(x)
-# for index, item in enumerate(mylist, start=1):
-#     print(index, item)
+
+for x in mylist:
+    print(x)
+for index, item in enumerate(mylist, start=1):
+    print(index, item)
 
 
 #join two list:
-# L1 = ['a','b', 'c', 'g', 'v', 's']
-# L2 = [12, 34, 56, 3, 45, 908, 1]
+L1 = ['a','b', 'c', 'g', 'v', 's']
+L2 = [12, 34, 56, 3, 45, 908, 1]
 # using +operator
-# L3 = L1+L2
-# print(L3)
+L3 = L1+L2
+print(L3)
 
 
 # L1.append(L2)
 # print(L1)
 #
-# for item in L2:
-#     L1.append(item)
-# print(L1)
+for item in L2:
+    L1.append(item)
+print(L1)
 
 
 
-# L1.extend(L2)
-# print(L1)
+L1.extend(L2)
+print(L1)
 
 
 
@@ -95,17 +93,17 @@ mylist = ['DS', 'ML', 'DL', 'AI', 'NLP', 'CV', 'Python', 'Java', 'C#', 'C++', 'R
 L1 = ['a','b', 'c', 's', 'v', 'g']
 L2 = [12, 34, 56, 3, 45, 908, 1]
 
-# print(max(L2))
-# print(min(L2))
-# print(sum(L2))
-# L2.reverse()
-# print(L2)
-# L1.sort()
-# print(L1)
-# L2.sort(reverse=True)
-# print(L2)
-# L2.sort()
-# print(L2)
+print(max(L2))
+print(min(L2))
+print(sum(L2))
+L2.reverse()
+print(L2)
+L1.sort()
+print(L1)
+L2.sort(reverse=True)
+print(L2)
+L2.sort()
+print(L2)
 newList = sorted(L2)
 print(newList)
 
